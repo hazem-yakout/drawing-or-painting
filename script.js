@@ -114,3 +114,6 @@ save.addEventListener("click", () => {
 canvas.addEventListener("mousedown", startdraw);
 canvas.addEventListener("mousemove", drawing);
 canvas.addEventListener("mouseup", () => (isdraw = false));
+canvas.addEventListener("touchstart", startdraw);
+canvas.addEventListener("touchmove", drawing);
+canvas.addEventListener("touchend", stopdraw);
